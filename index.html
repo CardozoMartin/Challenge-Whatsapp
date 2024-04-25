@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whatsapp Web</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-B4dCiEXzS9PA3d/2Cm7AKMPp5UDJAKK0V0oKS4Kk21DiD5PymBSn5m2+Ea3PiF6I" crossorigin="anonymous">
+
+  </head>
+  <body>
     <section class="contenedor">
-        <article class="contenedor--contactos">
-            <div class="contenedor--contactos__header"></div>
-        </article>
-        <article class="contenedor--mensajes"></article>
+      <article class="contenedor__contactos">
+        <div class="contenedor__contactos__header">
+          <div class="contenedor__contactos__header__imagen">
+            <img
+              src="./img/descargar.jpg"
+              alt="perfil de Whatsapp"
+              class="contenedor__contactos__header__imagen__usuario"
+            />
+          </div>
+          <ul class="contenor__contactos__header__iconos">
+            <li><i class="fa-regular fa-users-line"></i></li>
+            <li><ion-icon name="ellipsis-vertical-outline"></ion-icon></li>
+            <li></li>
+          </ul>
+        </div>
+      </article>
+      <article class="contenedor__mensajes"></article>
     </section>
-    
-</body>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
