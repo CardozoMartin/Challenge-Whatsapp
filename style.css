@@ -1,12 +1,10 @@
 /* Configuraciones basicas para todo el proyecto */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Crimson Text", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Configuraciones basicas para el body */
@@ -202,7 +200,7 @@ color: #bbb;
   align-items: center;
 }
 .contanedor__contactos__chatlista__bloque__detalles_mensaje p{
-  color: #aaa;
+  
   display: -webkit-box;
   -webkit-line-clamp: 1;
   font-size: 0.9em;
@@ -210,6 +208,10 @@ color: #bbb;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.contanedor__contactos__chatlista__bloque__detalles_mensaje__activo{
+  color: #8a8989;
+}
+
 .contanedor__contactos__chatlista__bloque__detalles_mensaje b{
   background: #0ed755;
   color: #fff;
@@ -218,6 +220,7 @@ color: #bbb;
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  font-size: 0.9em;
 }
 /* Contenedor de mensajes */
 .contenedor__mensajes {
@@ -380,6 +383,7 @@ align-items: center;
 .contendor__mensajes__input ion-icon:nth-child(1){
   margin-right: 15px;
  }
+
 .contendor__mensajes__input input{
   position: relative;
   width: 90%;
@@ -390,3 +394,8 @@ align-items: center;
   border-radius: 30px;
   font-size: 1em;
 }
+.contendor__mensajes__input input::placeholder{
+  
+  font-size: 0.9em;
+}
+
