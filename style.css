@@ -139,6 +139,9 @@ color: #bbb;
  .contanedor__contactos__chatlista__bloque.activo{
   background: #ebebeb;
  }
+ .contanedor__contactos__chatlista__bloque.activo:hover{
+  background: #e0e0e0;
+ }
  
 .contenedor__contactos__chatlista__bloque__img{
   position: relative;
