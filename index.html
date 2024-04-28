@@ -1,174 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whatsapp Web</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha384-B4dCiEXzS9PA3d/2Cm7AKMPp5UDJAKK0V0oKS4Kk21DiD5PymBSn5m2+Ea3PiF6I"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Whatsapp Web</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha384-B4dCiEXzS9PA3d/2Cm7AKMPp5UDJAKK0V0oKS4Kk21DiD5PymBSn5m2+Ea3PiF6I" crossorigin="anonymous">
+  <body>
+    <main>
+      <section class="contenedor">
+        <article class="contenedor__contactos">
+          <!-- Header -->
+          <div class="contenedor__contactos__header">
+            <div class="contenedor__contactos__header__imagen">
+              <img
+                src="./img/descargar.jpg"
+                alt="perfil de Whatsapp"
+                class="contenedor__contactos__header__imagen__usuario"
+              />
+            </div>
+            <ul class="contenor__contactos__header__iconos">
+              <li></li>
+              <li><ion-icon name="ellipsis-vertical-outline"></ion-icon></li>
+              <li><ion-icon name="people-outline"></ion-icon></li>
+            </ul>
+          </div>
+          <!--Buscador del chat-->
+          <div class="contendor__contactos__buscador">
+            <div>
+              <input
+                type="text"
+                placeholder="Busca un chat o inicia uno nuevo"
+              />
+              <ion-icon name="search-outline"></ion-icon>
+            </div>
+          </div>
+          <!--Lista de chats-->
+          <div class="contenedor__contactos__chatlista">
+            <div class="contanedor__contactos__chatlista__bloque activo">
+              <div class="contenedor__contactos__chatlista__bloque__img">
+                <img src="./img/descargar.jpg" alt="cover" />
+              </div>
+              <div class="contanedor__contactos__chatlista__bloque__detalles">
+                <div
+                  class="contanedor__contactos__chatlista__bloque__detalles_lista"
+                >
+                  <h4>Lionel Messi</h4>
+                  <p
+                    class="contanedor__contactos__chatlista__bloque__detalles_lista_timepo"
+                  >
+                    22:50
+                  </p>
+                </div>
+                <div
+                  class="contanedor__contactos__chatlista__bloque__detalles_mensaje"
+                >
+                  <p
+                    class="contanedor__contactos__chatlista__bloque__detalles_mensaje__activo"
+                  >
+                    Hola pa
+                  </p>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <div
+                  class="contanedor__contactos__chatlista__bloque__detalles_mensaje__linea"
+                ></div>
+              </div>
+              <hr />
+            </div>
+            <div class="contanedor__contactos__chatlista__bloque">
+              <div class="contenedor__contactos__chatlista__bloque__img">
+                <img src="./img/perfil-cristiano.webp" alt="cover" />
+              </div>
+              <div class="contanedor__contactos__chatlista__bloque__detalles">
+                <div
+                  class="contanedor__contactos__chatlista__bloque__detalles_lista"
+                >
+                  <h4>El bicho !!!</h4>
+                  <p
+                    class="contanedor__contactos__chatlista__bloque__detalles_lista_timepo_nuevo"
+                  >
+                    22:35
+                  </p>
+                </div>
+                <div
+                  class="contanedor__contactos__chatlista__bloque__detalles_mensaje"
+                >
+                  <p
+                    class="contanedor__contactos__chatlista__bloque__detalles_mensaje__nuevo"
+                  >
+                    Quiero que juegues para mi equipo vamos contra lio
+                  </p>
+                  <b>1</b>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <div
+                  class="contanedor__contactos__chatlista__bloque__detalles_mensaje__linea"
+                ></div>
+              </div>
+            </div>
+            <div class="contanedor__contactos__chatlista__bloque">
+              <div class="contenedor__contactos__chatlista__bloque__img">
+                <img src="./img/Pablo-Marino.png" alt="cover" />
+              </div>
+              <div class="contanedor__contactos__chatlista__bloque__detalles">
+                <div
+                  class="contanedor__contactos__chatlista__bloque__detalles_lista"
+                >
+                  <h4>Pablo Marino</h4>
+                  <p
+                    class="contanedor__contactos__chatlista__bloque__detalles_lista_timepo_nuevo"
+                  >
+                    21:35
+                  </p>
+                </div>
+                <div
+                  class="contanedor__contactos__chatlista__bloque__detalles_mensaje"
+                >
+                  <p>Che como haces para centrar un div?dsadsadasdas</p>
+                  <b>1</b>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <div
+                  class="contanedor__contactos__chatlista__bloque__detalles_mensaje__linea"
+                ></div>
+              </div>
+            </div>
+            <div class="contanedor__contactos__chatlista__bloque">
+              <div class="contenedor__contactos__chatlista__bloque__img">
+                <img src="./img/faker-perfil.jpg" alt="cover" />
+              </div>
+              <div class="contanedor__contactos__chatlista__bloque__detalles">
+                <div
+                  class="contanedor__contactos__chatlista__bloque__detalles_lista"
+                >
+                  <h4>Faker</h4>
+                  <p
+                    class="contanedor__contactos__chatlista__bloque__detalles_lista_timepo_nuevo"
+                  >
+                    21:00
+                  </p>
+                </div>
+                <div
+                  class="contanedor__contactos__chatlista__bloque__detalles_mensaje"
+                >
+                  <p>Sale unos lolcito hoy manquito?dsdsadsadasdas</p>
+                  <b>1</b>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <div
+                  class="contanedor__contactos__chatlista__bloque__detalles_mensaje__linea"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="contenedor__mensajes">
+          <div class="contenedor__mensajes__header">
+            <!--Informacion del usuario-->
+            <div class="contendor__mensajes__header__infousuario">
+              <div class="contendor__mensajes__header__infousuario__imagen">
+                <img
+                  src="./img/descargar.jpg"
+                  alt="perfil de Whatsapp"
+                  class="contendor__mensajes__header__infousuario__imagen__usuario"
+                />
+              </div>
+              <h4>Lionel Messi <br /><span>en linea</span></h4>
+            </div>
+            <ul class="contenedor__mensajes__header__iconos">
+              <li></li>
+              <li><ion-icon name="videocam-outline" class="contenedor__mensajes__header__iconos_cam"></ion-icon ></li>
+              <li><ion-icon name="search-outline" class="contenedor__mensajes__header__iconos_icon"></ion-icon></li>
+              <li><ion-icon name="ellipsis-vertical-outline" class="contenedor__mensajes__header__iconos_icon"></ion-icon></li>
+            </ul>
+          </div>
+          <div class="contendor__mensajes__chat">
+            <div class="contendor__mensajes__chat_otrosmensajes">
+              <p>Hola pa <br /><span>22:50</span></p>
+            </div>
+            <div class="contendor__mensajes__chat_mismensajes">
+              <p>Hola lio. Como estas? <span>22:51 <ion-icon name="checkmark-done-outline" id="icon"></ion-icon></span></p>
+            </div>
+            <div class="contendor__mensajes__chat_otrosmensajes">
+              <p>
+                Todo bien aqui tomando unos mates. Che te queria pedir un
+                favor!!! <br /><span>22:55</span>
+              </p>
+            </div>
+            <div class="contendor__mensajes__chat_mismensajes">
+              <p>
+                Si, leo decime en que te puedo ayudar <br /><span>22:57 <ion-icon name="checkmark-done-outline" id="icon"></ion-icon></span>
+              </p>
+            </div>
+            <div class="contendor__mensajes__chat_otrosmensajes">
+              <p>
+                La proxima semana jugamo un campeonta de futbol 5 y necesito uno
+                picante que sea un crack como vos <br /><span>22:59</span>
+              </p>
+            </div>
+            <div class="contendor__mensajes__chat_mismensajes">
+              <p>Encantado de jugar como vos lio <br /><span>23:01 <ion-icon name="checkmark-done-outline" id="icon"></ion-icon></span></p>
+            </div>
+            <div class="contendor__mensajes__chat_otrosmensajes">
+              <p>
+                Gracias pa, nos vemos la proxima semana entonces. No me
+                falles!!!<span>23:03</span>
+              </p>
+            </div>
+            <div class="contendor__mensajes__chat_mismensajes">
+              <p>
+                Dale lio, cuidate nos vemos en la cancha.<br /><span
+                  >23:07 <ion-icon name="checkmark-done-outline" id="icon"></ion-icon></span
+                >
+              </p>
+            </div>
+          </div>
 
-</head>
-
-<body>
-  <main>
-    <section class="contenedor">
-      <article class="contenedor__contactos">
-        <!-- Header -->
-        <div class="contenedor__contactos__header">
-
-          <div class="contenedor__contactos__header__imagen">
-            <img src="./img/descargar.jpg" alt="perfil de Whatsapp"
-              class="contenedor__contactos__header__imagen__usuario" />
+          <!--Chat input -->
+          <div class="contendor__mensajes__input">
+            <ion-icon name="happy-outline"></ion-icon>
+            <ion-icon name="add-outline"></ion-icon>
+            <input type="text" placeholder="Escribe un mensaje" />
+            <ion-icon name="mic-outline"></ion-icon>
           </div>
-          <ul class="contenor__contactos__header__iconos">
-            <li></li>
-            <li><ion-icon name="ellipsis-vertical-outline"></ion-icon></li>
-            <li><ion-icon name="people-outline"></ion-icon></ion-icon></li>
-          </ul>
-        </div>
-        <!--Buscador del chat-->
-        <div class="contendor__contactos__buscador">
-          <div>
-            <input type="text" placeholder="Busca un chat o inicia uno nuevo">
-            <ion-icon name="search-outline"></ion-icon>
-          </div>
-        </div>
-        <!--Lista de chats-->
-        <div class="contenedor__contactos__chatlista">
-          <div class="contanedor__contactos__chatlista__bloque activo">
-            <div class="contenedor__contactos__chatlista__bloque__img">
-              <img src="./img/descargar.jpg" alt="cover">
-            </div>
-            <div class="contanedor__contactos__chatlista__bloque__detalles ">
-              <div class="contanedor__contactos__chatlista__bloque__detalles_lista">
-                <h4>Lionel Messi</h4>
-                <p class="contanedor__contactos__chatlista__bloque__detalles_lista_timepo">22:50</p>
-              </div>
-              <div class="contanedor__contactos__chatlista__bloque__detalles_mensaje">
-                <p class="contanedor__contactos__chatlista__bloque__detalles_mensaje__activo">Hola pa</p>
-              </div>
-              <div class="contanedor__contactos__chatlista__bloque__detalles_mensaje__linea">
-                
-              </div>
-            </div>
-            <hr>
-          </div>
-          <div class="contanedor__contactos__chatlista__bloque">
-            <div class="contenedor__contactos__chatlista__bloque__img">
-              <img src="./img/perfil-cristiano.webp" alt="cover">
-            </div>
-            <div class="contanedor__contactos__chatlista__bloque__detalles">
-              <div class="contanedor__contactos__chatlista__bloque__detalles_lista">
-                <h4>El bicho !!!</h4>
-                <p class="contanedor__contactos__chatlista__bloque__detalles_lista_timepo_nuevo">22:35</p>
-              </div>
-              <div class="contanedor__contactos__chatlista__bloque__detalles_mensaje">
-                <p class="contanedor__contactos__chatlista__bloque__detalles_mensaje__nuevo">Quiero que juegues para mi equipo vamos contra lio</p>
-                <b>1</b>
-                <ion-icon name="chevron-down-outline" class="contanedor__contactos__chatlista__bloque__detalles_mensaje_icono">dsdsa</ion-icon>
-              </div>
-              <div class="contanedor__contactos__chatlista__bloque__detalles_mensaje__linea">
-                
-              </div>
-            </div>
-          </div>
-          <div class="contanedor__contactos__chatlista__bloque">
-            <div class="contenedor__contactos__chatlista__bloque__img">
-              <img src="./img/Pablo-Marino.png" alt="cover">
-            </div>
-            <div class="contanedor__contactos__chatlista__bloque__detalles">
-              <div class="contanedor__contactos__chatlista__bloque__detalles_lista">
-                <h4>Pablo Marino</h4>
-                <p class="contanedor__contactos__chatlista__bloque__detalles_lista_timepo_nuevo">21:35</p>
-              </div>
-              <div class="contanedor__contactos__chatlista__bloque__detalles_mensaje">
-                <p>Che como haces para centrar un div?</p>
-                <b>2</b>
-              </div>
-              <div class="contanedor__contactos__chatlista__bloque__detalles_mensaje__linea">
-                
-              </div>
-            </div>
-          </div>
-          <div class="contanedor__contactos__chatlista__bloque">
-            <div class="contenedor__contactos__chatlista__bloque__img">
-              <img src="./img/faker-perfil.jpg" alt="cover">
-            </div>
-            <div class="contanedor__contactos__chatlista__bloque__detalles">
-              <div class="contanedor__contactos__chatlista__bloque__detalles_lista">
-                <h4>Faker</h4>
-                <p class="contanedor__contactos__chatlista__bloque__detalles_lista_timepo_nuevo">21:00</p>
-              </div>
-              <div class="contanedor__contactos__chatlista__bloque__detalles_mensaje">
-                <p>Sale lol manco?</p>
-                <b>2</b>
-              </div>
-              <div class="contanedor__contactos__chatlista__bloque__detalles_mensaje__linea">
-                
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </article>
-      <article class="contenedor__mensajes">
-        <div class="contenedor__mensajes__header">
-          <!--Informacion del usuario-->
-          <div class="contendor__mensajes__header__infousuario">
-            <div class="contendor__mensajes__header__infousuario__imagen">
-              <img src="./img/descargar.jpg" alt="perfil de Whatsapp"
-                class="contendor__mensajes__header__infousuario__imagen__usuario" />
-            </div>
-            <h4>Lionel Messi <br><span>en linea</span></h4>
-          </div>
-          <ul class="contenor__contactos__header__iconos">
-            <li></li>
-            <li><ion-icon name="search-outline"></ion-icon></li>
-            <li><ion-icon name="ellipsis-vertical-outline"></ion-icon></li>
-          </ul>
-        </div>
-        <div class="contendor__mensajes__chat">
-          
-          <div class="contendor__mensajes__chat_otrosmensajes">
-            <p>Hola pa <br><span>22:50</span></p>
-          </div>
-          <div class="contendor__mensajes__chat_mismensajes">
-            <p>Hola lio. Como estas? <br><span>22:51</span></p>
-          </div>
-          <div class="contendor__mensajes__chat_otrosmensajes">
-            <p>Todo bien aqui tomando unos mates. Che te queria pedir un favor!!! <br><span>22:55</span></p>
-          </div>
-          <div class="contendor__mensajes__chat_mismensajes">
-            <p>Si, leo decime en que te puedo ayudar <br><span>22:57</span></p>
-          </div>
-          <div class="contendor__mensajes__chat_otrosmensajes">
-            <p>La proxima semana jugamo un campeonta de futbol 5 y necesito uno picante que sea un crack como vos <br><span>22:59</span></p>
-          </div>
-          <div class="contendor__mensajes__chat_mismensajes">
-            <p>Encantado de jugar como vos lio <br><span>23:01</span></p>
-          </div>
-          <div class="contendor__mensajes__chat_otrosmensajes">
-            <p>Gracias pa, nos vemos la proxima semana entonces. No me falles!!!<br><span>23:03</span></p>
-          </div>
-          <div class="contendor__mensajes__chat_mismensajes">
-            <p>Dale lio, cuidate nos vemos en la cancha.<br><span>23:07</span></p>
-          </div>
-        </div>
-
-        <!--Chat input -->
-        <div class="contendor__mensajes__input">
-          <ion-icon name="happy-outline"></ion-icon>
-          <ion-icon name="add-outline"></ion-icon>
-          <input type="text" placeholder="Escribe un mensaje">
-          <ion-icon name="mic-outline"></ion-icon>
-        </div>
-      </article>
-    </section>
-  </main>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-
+        </article>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
