@@ -11,7 +11,7 @@
 
 body {
  
-
+overflow-y: hidden;
   
 }
 
@@ -456,7 +456,7 @@ color: #10adeb; }
 /*seccion de escribir mensajes*/
 .contendor__mensajes__input{
   position: fixed;
-  width: 100%;
+  width: 72%;
   height: 60px;
   background: #202c33;
   padding: 15px;
