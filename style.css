@@ -6,29 +6,9 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
-
-/* Configuraciones basicas para el body */
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-
-  background: linear-gradient(
-    #009688 0%,
-    #009688 130px,
-    #d9dbd5 130px,
-    #d9dbd5 100%
-  );
-}
-
 /* Contenedor principal */
 .contenedor {
-  position: relative;
-  width: 1280px;
-  max-width: 100%;
-  height: calc(100vh - 40px);
+  
   background: #fff;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 0 rgba(0, 0, 0, 0.06);
   display: flex;
@@ -78,10 +58,18 @@ body {
   display: flex;
   list-style: none;
   cursor: pointer;
-  color: #51585c;
+  color: #dfe1e2;
   font-size: 1.5em;
   margin-left: 22px;
 }
+.contenor__contactos__header__iconos ion-icon[name="at-circle-outline"] > span {
+   position: relative;
+  width: 10px;
+  height: 10px;
+  color: red;
+  z-index: 5;
+}
+
 
 /*Buscador de contactos*/
 .contendor__contactos__buscador{
@@ -108,6 +96,7 @@ body {
   border-radius: 10px;
   font-size: 14px;
   padding-left: 40px;
+  color: #abb7be;
 }
 .contendor__contactos__buscador div input::placeholder{
 color: #bbb; 
@@ -118,6 +107,13 @@ color: #bbb;
   top: 14px;
   font-size: 1.2em;
 
+ }
+
+ .contendor__contactos__buscador .contenedor__contactos__buscador__filtro{
+  font-size: 1.2em;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #848d92;
  }
  /*Lista de chats*/
  .contenedor__contactos__chatlista{
@@ -204,12 +200,20 @@ color: #bbb;
   
 }
 .contanedor__contactos__chatlista__bloque ion-icon{
+  position: relative;
+  top: 6px;
+  font-size: 1.3em;
+}
+.contanedor__contactos__chatlista__bloque #icon{
+  position: relative;
+  font-weight: 600;
   font-size: 1.3em;
   color: #8a8989;
   display: none;
 }
-.contanedor__contactos__chatlista__bloque:hover ion-icon{
+.contanedor__contactos__chatlista__bloque:hover #icon{
   display: block;
+  font-weight: bolder;
 }
 
 .contanedor__contactos__chatlista__bloque__detalles_mensaje p{
@@ -223,8 +227,8 @@ color: #bbb;
   font-weight: 600;
 }
 .contanedor__contactos__chatlista__bloque__detalles_mensaje__activo{
-  color: #8a8989;
-  font-weight: 400;
+  color: #c4c0c0;
+  font-weight: 200!important;
   
 }
 
@@ -401,6 +405,8 @@ font-weight: bold;
 color: #10adeb; }
 
 
+
+
 .contendor__mensajes__chat_otrosmensajes{
   position: relative;
   display: flex;
@@ -444,8 +450,9 @@ color: #10adeb; }
 
 /*seccion de escribir mensajes*/
 .contendor__mensajes__input{
-  position: relative;
-  width: 100%;
+  position: fixed;
+  bottom:0;
+  width: 70%;
   height: 60px;
   background: #202c33;
   padding: 15px;
@@ -473,6 +480,7 @@ color: #10adeb; }
   border-radius: 10px;
   font-size: 1em;
   background: #2a3942;
+  color: #abb7be;
 }
 .contendor__mensajes__input input::placeholder{
   color: #7b9694;
