@@ -6,8 +6,28 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+
+/* Configuraciones basicas para el body */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background: linear-gradient(
+    #009688 0%,
+    #009688 130px,
+    #d9dbd5 130px,
+    #d9dbd5 100%
+  );
+}
+
 /* Contenedor principal */
 .contenedor {
+  position: relative;
+  width: 1380px;
+  max-width: 100%;
   
   background: #fff;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 0 rgba(0, 0, 0, 0.06);
@@ -62,6 +82,10 @@
   font-size: 1.5em;
   margin-left: 22px;
 }
+.contenor__contactos__header__iconos img{
+  width: 22px;
+  height: 22px;
+}
 .contenor__contactos__header__iconos ion-icon[name="at-circle-outline"] > span {
    position: relative;
   width: 10px;
@@ -96,7 +120,6 @@
   border-radius: 10px;
   font-size: 14px;
   padding-left: 40px;
-  color: #abb7be;
 }
 .contendor__contactos__buscador div input::placeholder{
 color: #bbb; 
@@ -189,6 +212,11 @@ color: #bbb;
 
   color: #e2e2e2;
 }
+.contanedor__contactos__chatlista__bloque__detalles_mensaje__activo ion-icon{
+  position: relative;
+  top: 4px;
+  font-size: 1.2em;
+}
 .contanedor__contactos__chatlista__bloque__detalles_lista_timepo .nuevo p{
 
   color: #00a884;
@@ -199,26 +227,14 @@ color: #bbb;
   align-items: center;
   
 }
-#imagen{
-  position: relative;
-  width: 22px;
-  height: 22px;
-}
-.contanedor__contactos__chatlista__bloque ion-icon{
-  position: relative;
-  top: 6px;
-  font-size: 1.3em;
-}
 .contanedor__contactos__chatlista__bloque #icon{
-  position: relative;
-  font-weight: 600;
   font-size: 1.3em;
   color: #8a8989;
   display: none;
 }
+
 .contanedor__contactos__chatlista__bloque:hover #icon{
   display: block;
-  font-weight: bolder;
 }
 
 .contanedor__contactos__chatlista__bloque__detalles_mensaje p{
@@ -232,8 +248,8 @@ color: #bbb;
   font-weight: 600;
 }
 .contanedor__contactos__chatlista__bloque__detalles_mensaje__activo{
-  color: #c4c0c0;
-  font-weight: 200!important;
+  color: #e5ddd5;
+  font-weight: 100!important;
   
 }
 
@@ -456,14 +472,14 @@ color: #10adeb; }
 /*seccion de escribir mensajes*/
 .contendor__mensajes__input{
   position: fixed;
-  bottom:0;
-  width: 70%;
+  width: 80%;
   height: 60px;
   background: #202c33;
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  bottom: 0;
 }
 .contendor__mensajes__input ion-icon{
   cursor: pointer;
@@ -485,7 +501,6 @@ color: #10adeb; }
   border-radius: 10px;
   font-size: 1em;
   background: #2a3942;
-  color: #abb7be;
 }
 .contendor__mensajes__input input::placeholder{
   color: #7b9694;
